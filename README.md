@@ -1,6 +1,6 @@
 # AWS-Document
 
-<img src="public/images/資格取得のための勉強法">
+<img src="public/images/資格取得のための勉強法.png">
 
 # 初心者向けのAWSの学び方2024
 https://speakerdeck.com/tttak/jin-karashi-meru-chu-xue-zhe-xiang-ke-aws-noxue-bifang-2024-0aa38397-f894-4ac3-a725-2b697395a750?slide=86
