@@ -1,6 +1,5 @@
 # AWS-Document
  > ## TODO : ハンズオン(Udemy, 公式) -> AWSの概要を知るために資格取得
- > テスト
 
 <img src="public/images/資格取得のための勉強法.png">
 
