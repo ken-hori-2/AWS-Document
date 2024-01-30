@@ -17,9 +17,12 @@ https://aws.amazon.com/jp/events/aws-event-resource/beginner/
 # 【公式】AWSハンズオン資料
 https://aws.amazon.com/jp/events/aws-event-resource/hands-on/
 
+ > ***** ここまでが最優先 *****
 
-<!-- # [ハンズオン] 初心者でもAWS SAMでサーバレスアーキテクチャを学ぼう！簡単なWebの仕組みを作ってみよう！ -->
-# [ハンズオン] 初心者でもAWS SAMでサーバレスアーキテクチャを学ぼう:bangbang:簡単なWebの仕組みを作ってみよう:bangbang:
+
+
+# [ハンズオン] 初心者でもAWS SAMでサーバレスアーキテクチャを学ぼう！簡単なWebの仕組みを作ってみよう！
+<!-- # [ハンズオン] 初心者でもAWS SAMでサーバレスアーキテクチャを学ぼう:bangbang:簡単なWebの仕組みを作ってみよう:bangbang: -->
 https://qiita.com/zwirky/items/789257e1be81bb1c44c6
 
 # aws-sam-cliでLambda,DynamoDBのサーバーレスアプリケーション開発に入門してみる
