@@ -1,5 +1,5 @@
 # AWS-Document
- > <span style="color: red; ">TODO : ハンズオン(Udemy, 公式) -> AWSの概要を知るために資格取得</span>
+ > ## TODO : ハンズオン(Udemy, 公式) -> AWSの概要を知るために資格取得
 
 <img src="public/images/資格取得のための勉強法.png">
 
