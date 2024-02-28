@@ -1,0 +1,22 @@
+transformerで時系列分析する場合、torch==2.1.2を指定する必要がある
+
+ubuntu@ip-172-31-80-174:~/App-Project/action_list_app$ history
+    1  exit
+    2  python --version
+    3  sudo apt install python-is-python3
+    4  sudo apt update
+    5  sudo apt install python3-pip
+    6  sudo pip install flask
+    7  sudo pip install matplotlib
+    8  sudo pip install pandas
+    9  sudo pip install scikit-learn
+   10  sudo pip install numpy
+   11  python --version
+   12  sudo pip install torch 2.1.2+cpu
+   13  sudo pip install torch==2.1.2+cpu
+   14  sudo pip install torch==2.1.2
+   15  git clone https://github.com/ken-hori-2/App-Project.git
+   16  cd App-Project/action_list_app/
+   17  python deploy.py
+   18  history
+   19  sudo pip install torchvision==0.16.2
