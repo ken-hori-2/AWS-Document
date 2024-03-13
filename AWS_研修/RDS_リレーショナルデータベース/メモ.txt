@@ -1,0 +1,22 @@
+
+
+リージョン > アベイラビリティゾーン > 各データセンター > 自分が使うサーバー
+
+・ローカルでは同じ部屋にネットワーク、PC、DBを置けば同じネットワーク環境で作業できる
+　> クラウドでも同じようにクラウド上に部屋のような同じ作業環境を作ってあげる
+　> これがVPC
+
+
+Aurora
+　- RDSに比べて拡張性と可用性がパワーアップ
+
+
+
+
+
+
+# ハンズオン
+シークレットARN:
+	arn:aws:secretsmanager:us-west-2:939490215743:secret:secretDBMasterUser-vXtPWaJugUUT-wrrGV1
+username: masteruser
+password: k4e74IVuG3

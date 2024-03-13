@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description:
+  CFn hands-on first step
+
+Resources:
+  MyBucket:
+    Type: AWS::S3::Bucket
+
+Outputs:
+  BucketARN:
+    Value: !GetAtt MyBucket.Arn
+    Description: S3 bucket ARN

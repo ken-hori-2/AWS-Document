@@ -1,0 +1,22 @@
+AWS Serverless Application Model (SAM):
+
+サーバーレスアプリケーションのデプロイに特化した
+AWS CloudFormation の拡張機能
+
+
+SAM テンプレートの特長
+→より簡潔な記述でサーバーレス構成のテンプレートを作成できる
+(SAM CLI などでビルド・デプロイ…CloudFormationテンプレートに変換した上でデプロイされる)
+
+CloudFormationと同じイメージだが、SAMの方がより完結に記載できる
+
+
+
+
+aws cli で、cloudformation で、引数でyaml ファイルを指定することで、コマンドベースで実行が可能
+例：
+aws cloudformation deploy \
+    --template-file cfn_dynamodb_table.yaml \
+    --stack-name TestStubForUserRequestTable \
+    --capabilities CAPABILITY_NAMED_IAM \
+    --region ap-northeast-1

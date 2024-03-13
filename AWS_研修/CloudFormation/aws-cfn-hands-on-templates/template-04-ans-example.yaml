@@ -1,0 +1,200 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description:
+  CFn hands-on first step
+
+Parameters:
+  SubnetAZ:
+    Type: AWS::EC2::AvailabilityZone::Name
+    Default: ap-northeast-1a
+    AllowedValues: 
+      - ap-northeast-1a
+      - ap-northeast-1c
+      - ap-northeast-1d
+    Description: Enter AZ for subnets.
+  
+  AMIId:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: /aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-x86_64
+
+Resources:
+  MyBucket:
+    Type: AWS::S3::Bucket
+
+  HandsOnVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      EnableDnsHostnames: true
+      CidrBlock: 192.168.0.0/16
+      Tags:
+        - Key: Name
+          Value: CFnHandsOn
+
+  PublicSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 192.168.0.0/24
+      AvailabilityZone: !Ref SubnetAZ
+      VpcId: !Ref HandsOnVPC
+      Tags:
+        - Key: Name
+          Value: PublicSubnet
+  
+  PrivateSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 192.168.1.0/24
+      AvailabilityZone: !Ref SubnetAZ
+      VpcId: !Ref HandsOnVPC
+      Tags:
+        - Key: Name
+          Value: PrivateSubnet
+
+  IGW:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: CFnHandsOn
+
+  IGWAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      InternetGatewayId: !Ref IGW
+      VpcId: !Ref HandsOnVPC
+
+  HandsOnRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref HandsOnVPC
+      Tags:
+        - Key: Name
+          Value: CFnHandsOn
+
+  IGWRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      GatewayId: !Ref IGW
+      DestinationCidrBlock: 0.0.0.0/0
+      RouteTableId: !Ref HandsOnRouteTable
+
+  RouteTableAssociationForPublicSubnet:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref HandsOnRouteTable
+      SubnetId: !Ref PublicSubnet
+  
+  HandsOnRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - ec2.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+      RoleName: HandsOnRole
+
+  S3AccessPolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: HandsOnS3AccessPolicy
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action:
+              - s3:*
+            Resource:
+              - !GetAtt MyBucket.Arn
+              - !Join [ '', [ !GetAtt MyBucket.Arn, '/*' ] ]
+      Roles:
+        - !Ref HandsOnRole
+
+  HandsOnSG:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: CFn Hands-on Security Group
+      VpcId: !Ref HandsOnVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+
+  HandsOnInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Path: '/'
+      Roles:
+        - !Ref HandsOnRole
+
+  PublicInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref AMIId
+      InstanceType: t3.micro
+      IamInstanceProfile: !Ref HandsOnInstanceProfile
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: true
+          DeviceIndex: 0
+          GroupSet:
+            - !Ref HandsOnSG
+          SubnetId: !Ref PublicSubnet
+      Tags:
+        - Key: Name
+          Value: Public
+
+  PrivateInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref AMIId
+      InstanceType: t3.micro
+      IamInstanceProfile: !Ref HandsOnInstanceProfile
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: true
+          DeviceIndex: 0
+          GroupSet:
+            - !Ref HandsOnSG
+          SubnetId: !Ref PrivateSubnet
+      Tags:
+        - Key: Name
+          Value: Private
+
+Outputs:
+  BucketARN:
+    Value: !GetAtt MyBucket.Arn
+    Description: S3 bucket ARN
+
+  VPCID:
+    Value: !Ref HandsOnVPC
+    Description: VPC ID
+
+  PublicSubnetID:
+    Value: !Ref PublicSubnet
+    Description: PublicSubnet ID
+
+  PrivateSubnetID:
+    Value: !Ref PrivateSubnet
+    Description: PrivateSubnet ID
+
+  IGWID:
+    Value: !Ref IGW
+    Description: InternetGateway ID
+
+  RouteTableID:
+    Value: !Ref HandsOnRouteTable
+    Description: RouteTable ID
+
+  PublicInstance:
+    Value: !Ref PublicInstance
+    Description: Public instance ID
