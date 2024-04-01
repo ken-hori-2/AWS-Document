@@ -29,7 +29,7 @@ https://aws.amazon.com/jp/events/aws-event-resource/archive/?cards.sort-by=item.
 https://aws.amazon.com/jp/getting-started/hands-on/?getting-started-all.sort-by=item.additionalFields.content-latest-publish-date&getting-started-all.sort-order=desc&awsf.getting-started-category=category%23machine-learning&awsf.getting-started-content-type=*all
 
 # Black Belt Online
-https://aws.amazon.com/jp/events/aws-event-resource/archive/?cards.sort-by=item.additionalFields.SortDate&cards.sort-order=desc&awsf.tech-category=tech-category
+https://aws.amazon.com/jp/events/aws-event-resource/archive/?cards.sort-by=item.additionalFields.SortDate&cards.sort-order=desc&awsf.tech-category=*all
 
  > ## ***** ここまでが最優先 *****
  > ## 以下はSAMの使い方など
