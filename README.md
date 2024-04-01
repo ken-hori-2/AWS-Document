@@ -1,65 +1,68 @@
 # AWS-Document
- > ## TODO : ƒnƒ“ƒYƒIƒ“(Udemy, Œö®) -> AWS‚ÌŠT—v‚ğ’m‚é‚½‚ß‚É‘Šiæ“¾
+ > ## TODO : ãƒãƒ³ã‚ºã‚ªãƒ³(Udemy, å…¬å¼) -> AWSã®æ¦‚è¦ã‚’çŸ¥ã‚‹ãŸã‚ã«è³‡æ ¼å–å¾—
 
-<img src="public/images/‘Šiæ“¾‚Ì‚½‚ß‚Ì•×‹­–@.png">
+<img src="public/images/è³‡æ ¼å–å¾—ã®ãŸã‚ã®å‹‰å¼·æ³•.png">
 
-# aws‘Ši@•×‹­•û–@
-# ©‘î‚ÅŠw‚Ú‚¤IAWS ‰ŠwÒŒü‚¯‚Ì•×‹­•û–@ 6ƒXƒeƒbƒvI
+# awsè³‡æ ¼ã€€å‹‰å¼·æ–¹æ³•
+# è‡ªå®…ã§å­¦ã¼ã†ï¼AWS åˆå­¦è€…å‘ã‘ã®å‹‰å¼·æ–¹æ³• 6ã‚¹ãƒ†ãƒƒãƒ—ï¼
 https://aws.amazon.com/jp/blogs/news/aws-beginner-home-learning/
 
-# ‰SÒŒü‚¯‚ÌAWS‚ÌŠw‚Ñ•û2024
+# åˆå¿ƒè€…å‘ã‘ã®AWSã®å­¦ã³æ–¹2024
 https://speakerdeck.com/tttak/jin-karashi-meru-chu-xue-zhe-xiang-ke-aws-noxue-bifang-2024-0aa38397-f894-4ac3-a725-2b697395a750?slide=86
 
-# AWS‚Í‚¶‚ß‚Ìˆê•à‚ÆŠw‚Ñ‚ÌŠ©‚ß(JAWS)
+# AWSã¯ã˜ã‚ã®ä¸€æ­©ã¨å­¦ã³ã®å‹§ã‚(JAWS)
 https://speakerdeck.com/tttak/jaws-ugchu-xin-zhe-zhi-bu-awshazimefalse-bu-toxue-bifalsesusume?slide=121
 
-# yAWS‰SÒŒü‚¯zAWSŠwK•û–@‚Ü‚Æ‚ßy15ŠÔ‚Å’B¬‚Å‚«‚éz
+# ã€AWSåˆå¿ƒè€…å‘ã‘ã€‘AWSå­¦ç¿’æ–¹æ³•ã¾ã¨ã‚ã€15æ™‚é–“ã§é”æˆã§ãã‚‹ã€‘
 https://qiita.com/toma_shohei/items/b7a001d26bd988d52021
 
-# yŒö®zAWS‰SÒŒü‚¯‘—¿
+# ã€å…¬å¼ã€‘AWSåˆå¿ƒè€…å‘ã‘è³‡æ–™
 https://aws.amazon.com/jp/events/aws-event-resource/beginner/
 
-# yŒö®zAWSƒnƒ“ƒYƒIƒ“‘—¿
+# ã€å…¬å¼ã€‘AWSãƒãƒ³ã‚ºã‚ªãƒ³è³‡æ–™
 https://aws.amazon.com/jp/events/aws-event-resource/hands-on/
 
-# yŒö®zAWS ƒT[ƒrƒX•Ê‘—¿
+# ã€å…¬å¼ã€‘AWS ã‚µãƒ¼ãƒ“ã‚¹åˆ¥è³‡æ–™
 https://aws.amazon.com/jp/events/aws-event-resource/archive/?cards.sort-by=item.additionalFields.SortDate&cards.sort-order=desc&awsf.tech-category=*all&cards.q=RDS&cards.q_operator=AND
 
-# yŒö®zƒnƒ“ƒYƒIƒ“ƒ`ƒ…[ƒgƒŠƒAƒ‹(10•ªŠÔƒ`ƒ…[ƒgƒŠƒAƒ‹)
+# ã€å…¬å¼ã€‘ãƒãƒ³ã‚ºã‚ªãƒ³ãƒãƒ¥ãƒ¼ãƒˆãƒªã‚¢ãƒ«(10åˆ†é–“ãƒãƒ¥ãƒ¼ãƒˆãƒªã‚¢ãƒ«)
 https://aws.amazon.com/jp/getting-started/hands-on/?getting-started-all.sort-by=item.additionalFields.content-latest-publish-date&getting-started-all.sort-order=desc&awsf.getting-started-category=category%23machine-learning&awsf.getting-started-content-type=*all
 
- > ## ***** ‚±‚±‚Ü‚Å‚ªÅ—Dæ *****
- > ## ˆÈ‰º‚ÍSAM‚Ìg‚¢•û‚È‚Ç
+# Black Belt Online
+https://aws.amazon.com/jp/events/aws-event-resource/archive/?cards.sort-by=item.additionalFields.SortDate&cards.sort-order=desc&awsf.tech-category=tech-category
+
+ > ## ***** ã“ã“ã¾ã§ãŒæœ€å„ªå…ˆ *****
+ > ## ä»¥ä¸‹ã¯SAMã®ä½¿ã„æ–¹ãªã©
 
 
 
-# [ƒnƒ“ƒYƒIƒ“] ‰SÒ‚Å‚àAWS SAM‚ÅƒT[ƒoƒŒƒXƒA[ƒLƒeƒNƒ`ƒƒ‚ğŠw‚Ú‚¤IŠÈ’P‚ÈWeb‚Ìd‘g‚İ‚ğì‚Á‚Ä‚İ‚æ‚¤I
-<!-- # [ƒnƒ“ƒYƒIƒ“] ‰SÒ‚Å‚àAWS SAM‚ÅƒT[ƒoƒŒƒXƒA[ƒLƒeƒNƒ`ƒƒ‚ğŠw‚Ú‚¤:bangbang:ŠÈ’P‚ÈWeb‚Ìd‘g‚İ‚ğì‚Á‚Ä‚İ‚æ‚¤:bangbang: -->
+# [ãƒãƒ³ã‚ºã‚ªãƒ³] åˆå¿ƒè€…ã§ã‚‚AWS SAMã§ã‚µãƒ¼ãƒãƒ¬ã‚¹ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã‚’å­¦ã¼ã†ï¼ç°¡å˜ãªWebã®ä»•çµ„ã¿ã‚’ä½œã£ã¦ã¿ã‚ˆã†ï¼
+<!-- # [ãƒãƒ³ã‚ºã‚ªãƒ³] åˆå¿ƒè€…ã§ã‚‚AWS SAMã§ã‚µãƒ¼ãƒãƒ¬ã‚¹ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã‚’å­¦ã¼ã†:bangbang:ç°¡å˜ãªWebã®ä»•çµ„ã¿ã‚’ä½œã£ã¦ã¿ã‚ˆã†:bangbang: -->
 https://qiita.com/zwirky/items/789257e1be81bb1c44c6
 
-# aws-sam-cli‚ÅLambda,DynamoDB‚ÌƒT[ƒo[ƒŒƒXƒAƒvƒŠƒP[ƒVƒ‡ƒ“ŠJ”­‚É“ü–å‚µ‚Ä‚İ‚é
+# aws-sam-cliã§Lambda,DynamoDBã®ã‚µãƒ¼ãƒãƒ¼ãƒ¬ã‚¹ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³é–‹ç™ºã«å…¥é–€ã—ã¦ã¿ã‚‹
 https://qiita.com/umeneri/items/6fb3f7560f4a878f6dfd
 
-# AWS SAM‚ğg‚Á‚Ä‚İ‚é
+# AWS SAMã‚’ä½¿ã£ã¦ã¿ã‚‹
 https://qiita.com/spring_i/items/e087905a82c40cf900a0
 
-# ƒ[ƒ‚©‚çn‚ß‚é AWS SAM “ü–å
+# ã‚¼ãƒ­ã‹ã‚‰å§‹ã‚ã‚‹ AWS SAM å…¥é–€
 https://qiita.com/OMOIKANESAN/items/b62fb62b8cd04544e1fc
 
-# [AWS SAM]VSCode‚ÅLambdaŠÖ”‚ğƒ[ƒJƒ‹‚ÅŠJ”­‚·‚é
+# [AWS SAM]VSCodeã§Lambdaé–¢æ•°ã‚’ãƒ­ãƒ¼ã‚«ãƒ«ã§é–‹ç™ºã™ã‚‹
 https://qiita.com/zukakosan/items/9c01aba5ff537382c856
 
-# y’´‰SÒŒü‚¯zWordPress‚ğAmazon EC2ƒCƒ“ƒXƒ^ƒ“ƒX‚ÉƒCƒ“ƒXƒg[ƒ‹‚·‚é
+# ã€è¶…åˆå¿ƒè€…å‘ã‘ã€‘WordPressã‚’Amazon EC2ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
 https://qiita.com/moomindani/items/9968df0d4396564bf74c
 
-# AWS‚ÅWordPress‚ğ\’z‚·‚é
+# AWSã§WordPressã‚’æ§‹ç¯‰ã™ã‚‹
 https://qiita.com/r_saiki/items/7eb008fb17d2cb9f96d5
 
 
 
 
-# AWSƒRƒ~ƒ…ƒjƒeƒB
+# AWSã‚³ãƒŸãƒ¥ãƒ‹ãƒ†ã‚£
 https://jawsug-bgnr.connpass.com/
 
-# ƒ\ƒj[‚Å‚Ì–—á(ƒvƒ‰ƒbƒgƒtƒH[ƒ€ƒGƒ“ƒWƒjƒA)
+# ã‚½ãƒ‹ãƒ¼ã§ã®äº‹ä¾‹(ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã‚¨ãƒ³ã‚¸ãƒ‹ã‚¢)
 https://speakerdeck.com/shunsato123/sonidenoshi-li-karakao-erupuratutohuomukai-fa?slide=8
